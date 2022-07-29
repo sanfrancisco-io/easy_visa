@@ -1,0 +1,244 @@
+.wrapper {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  padding: 30px 43px 20px 23px;
+  background: #f6f6f6;
+  margin-top: 20px;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  column-gap: 20px;
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-bottom: 60px;
+
+    h2 {
+      font-weight: 400;
+      line-height: 143%;
+      letter-spacing: -0.02em;
+      background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+      font-weight: 400;
+      -webkit-box-decoration-break: clone;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      @media screen and (max-width: 464px) {
+        text-align: center;
+      }
+    }
+
+    .navs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a:first-child:hover,
+      .email:hover {
+        transition: 0.5s;
+        background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+        font-weight: 400;
+        -webkit-box-decoration-break: clone;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+
+      .email:hover {
+        border-bottom: 1px solid #00dfbd;
+      }
+
+      a:last-child {
+        display: flex;
+      }
+
+      a:last-child:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+      }
+
+      @media screen and (max-width: 674px) {
+        flex-direction: column;
+        a:last-child {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .divider {
+      vertical-align: baseline;
+      color: #b2c2d3;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      margin: 0 10px;
+    }
+
+    .divider:after {
+      content: "|";
+      display: inline-block;
+
+      @media screen and (max-width: 674px) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 464px) {
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+    }
+  }
+
+  .block {
+    h1 {
+      margin-bottom: 10px;
+      font-size: 40px;
+      line-height: 117.5%;
+      font-family: "TT Hoves", sans-serif;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 143%;
+      letter-spacing: -0.02em;
+      background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+      font-weight: 400;
+      -webkit-box-decoration-break: clone;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    @media screen and (max-width: 1300px) {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .radioBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -30px;
+
+    .radioWrapper {
+      width: 100%;
+      border-radius: 30px;
+      background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .first {
+        background-image: url("../../assets/svg/RadioBackground_2.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 10% 10%;
+
+        .second {
+          background-image: url("../../assets/svg/RadioBackgroun_1.svg");
+          background-repeat: no-repeat;
+          background-size: 100%;
+          padding: 50px;
+          background-position: 100% 100%;
+        }
+      }
+
+      h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        margin-bottom: 30px;
+        color: #fff;
+      }
+
+      .nextButton {
+        border: none;
+        background: transparent;
+        width: max-content;
+        position: relative;
+        span {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          cursor: pointer;
+          display: inline-block;
+          color: #fff;
+          padding: 16px 26px;
+          border-radius: 50px;
+          transition: box-shadow 0.3s;
+          border: 1px solid #fff;
+          letter-spacing: -0.04em;
+          transition: 0.3s;
+
+          &:hover {
+            transition: 0.3s;
+            border: 2px solid #fff;
+            padding: 15px 25px;
+          }
+        }
+
+        .icon {
+          padding-left: 5px !important;
+        }
+      }
+    }
+  }
+
+  .tarifs {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 19px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+    padding: 1px;
+
+    .tarifBlock {
+      border-radius: 19px;
+      display: block;
+      text-decoration: none;
+      padding: 40px 15px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+
+      h3 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        -webkit-box-decoration-break: clone !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+        text-fill-color: transparent !important;
+        transition: background 0.3s;
+        background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+      }
+      span {
+        margin-left: 10px;
+        transition: transform 0.3s;
+      }
+    }
+  }
+}

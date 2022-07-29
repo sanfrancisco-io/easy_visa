@@ -1,0 +1,209 @@
+.wrapper {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @media screen and (max-width: 992px) {
+    margin: 0 20px;
+  }
+
+  background: #f6f6f6;
+  border-radius: 30px;
+  padding: 20px;
+
+  .blocks {
+    display: grid;
+    grid-gap: 70px;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: 560px) {
+      display: block;
+
+      .block_right {
+        margin-top: 70px;
+      }
+    }
+
+    .block_left {
+      padding-left: 40px;
+      .blockHeader {
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+          font: 400 36px/133% "TT Hoves";
+          margin-bottom: 20px;
+
+          @media screen and (max-width: 1300px) {
+            font-size: 30px;
+          }
+
+          @media (max-width: 992px) {
+            font-size: 22px;
+          }
+        }
+
+        a {
+          padding: 22px 41px;
+          font-weight: 400;
+          font-size: 20px;
+          border-radius: 10px;
+          line-height: 170%;
+          letter-spacing: -0.04em;
+          color: #fff;
+          cursor: pointer;
+          transition: box-shadow 0.3s;
+          box-shadow: 0 0 0 0 #03b9dd;
+          transform: translateY(-25%);
+          background: linear-gradient(
+            113.78deg,
+            #00dfbd -1.69%,
+            #0090ff 112.64%
+          );
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            box-shadow: 0 0 10px 2px #03b9dd;
+          }
+          @media screen and (max-width: 607px) {
+            padding: 10px;
+          }
+          @media screen and (max-width: 544px) {
+            padding: 5px;
+          }
+        }
+      }
+
+      .blockBody {
+        p {
+          font-size: 20px;
+          line-height: 140%;
+          font-weight: 300;
+
+          span {
+            font-weight: 500;
+          }
+        }
+        a {
+          color: #b8b8b8;
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .block_right {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+      .card {
+        background-color: white;
+        padding: 20px;
+        height: 258px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+
+        a {
+          -webkit-box-decoration-break: clone;
+          -webkit-background-clip: text !important;
+          -webkit-text-fill-color: transparent !important;
+          background-clip: text !important;
+          text-fill-color: transparent !important;
+          background: linear-gradient(
+            113.78deg,
+            #00dfbd -1.69%,
+            #0090ff 112.64%
+          );
+        }
+      }
+      .card_1 {
+        background-image: url("../../assets/svg/BackgroundForCard.svg");
+        background-repeat: no-repeat;
+        background-position: 110% 110%;
+        div {
+          max-width: 304px;
+          z-index: 1;
+          position: relative;
+
+          h3 {
+            font-size: 24px;
+            line-height: 133%;
+            margin-bottom: 10px;
+            font-weight: 400;
+            letter-spacing: -0.04em;
+            color: #1b1a22;
+          }
+
+          p {
+            font-size: 20px;
+            line-height: 140%;
+            ont-weight: 400;
+            letter-spacing: -0.04em;
+            color: #1b1a22;
+
+            span {
+              a {
+                background: #0000ee;
+              }
+            }
+          }
+        }
+      }
+
+      .card_2 {
+        position: relative;
+
+        .telegramIcon {
+          position: absolute;
+          right: 5%;
+          bottom: 10%;
+        }
+
+        div {
+          max-width: 304px;
+          z-index: 1;
+          position: relative;
+
+          a {
+            font-size: 24px;
+            line-height: 133%;
+            color: #0d93ff;
+            letter-spacing: -0.04em;
+
+            .highlight {
+              text-decoration: underline;
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+
+            span {
+              a {
+                background: #0000ee;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

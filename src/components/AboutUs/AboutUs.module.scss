@@ -1,0 +1,69 @@
+.block {
+  padding: 90px 20px 90px 20px;
+  .content {
+    display: inline;
+    font-weight: 400;
+    -webkit-box-decoration-break: clone !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+    transition: background 0.3s;
+    background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 120%;
+    color: #b5c2d2;
+    font-family: "TT Hoves", sans-serif;
+
+    span {
+      -webkit-text-fill-color: initial !important;
+    }
+
+    .logoText {
+      -webkit-text-fill-color: black !important;
+
+      svg {
+        position: relative;
+        top: 0.15em;
+
+        @media screen and (max-width: 1100px) {
+          position: relative;
+          top: 0.3em;
+        }
+        @media screen and (max-width: 900px) {
+          position: relative;
+          top: 0.45em;
+        }
+      }
+      //background: linear-gradient(113.78deg, #000 -1.69%, #000 112.64%);
+    }
+  }
+  p {
+    font-size: 20px;
+    line-height: 140%;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    h3 {
+      font-size: 30px;
+    }
+    svg {
+      position: relative;
+      top: 0.3em;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    h3 {
+      font-size: 23px;
+    }
+    svg {
+      position: relative;
+      top: 0.45em;
+    }
+  }
+}

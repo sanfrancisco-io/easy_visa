@@ -1,0 +1,117 @@
+.wrapper {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  padding-top: 100px;
+  margin-bottom: 100px;
+  h2 {
+    font-family: "TT Hoves", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (max-width: 1300px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 22px;
+    }
+  }
+
+  .questions {
+    padding: 0 95px;
+    display: grid;
+    row-gap: 20px;
+
+    @media screen and (max-width: 1000px) {
+      padding: 0 70px;
+    }
+    @media screen and (max-width: 800px) {
+      padding: 0 50px;
+    }
+    @media screen and (max-width: 6500px) {
+      padding: 0 10px;
+    }
+
+    .titleOfQuestion,
+    .notActiveQuestion {
+      font-size: 20px;
+      font-family: "TT Hoves", sans-serif;
+      font-weight: 100;
+      color: #1b1a22;
+      letter-spacing: -0.01em;
+      -webkit-box-decoration-break: clone;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: #1b1a22 !important;
+      background-clip: text !important;
+      text-fill-color: #1b1a22 !important;
+      width: fit-content;
+
+      &:hover {
+        background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+        -webkit-text-fill-color: transparent !important;
+        text-fill-color: transparent !important;
+      }
+    }
+
+    .activeQuestion {
+      -webkit-box-decoration-break: clone;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+      text-fill-color: transparent !important;
+      background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+    }
+
+    .answer {
+      font: 100 24px/150% "TT Hoves";
+      color: #1b1a22;
+      letter-spacing: -0.01em;
+      font-family: "TT Hoves", sans-serif;
+      font-weight: 100;
+
+      @media (max-width: 990px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.wrappHeaderAcc:hover :global(.titleAcc) {
+  background: linear-gradient(
+    113.78deg,
+    #00dfbd -1.69%,
+    #0090ff 112.64%
+  ) !important;
+  -webkit-box-decoration-break: clone;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-fill-color: transparent !important;
+}
+
+.wrappHeaderAcc:hover :global(.plus) {
+  &::after,
+  &::before {
+    background: linear-gradient(
+      113.78deg,
+      #00dfbd -1.69%,
+      #0090ff 112.64%
+    ) !important;
+  }
+}
+
+.wrappHeaderAcc:hover :global(.activePlus) {
+  &::after {
+    background: linear-gradient(
+      113.78deg,
+      #00dfbd -1.69%,
+      #0090ff 112.64%
+    ) !important;
+  }
+}

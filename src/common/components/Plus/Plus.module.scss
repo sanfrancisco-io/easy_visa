@@ -1,0 +1,61 @@
+.active,
+.notActive {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.active {
+  &::before {
+    right: 50%;
+    top: 0;
+    background: #1b1a22;
+    display: block;
+    width: 1px;
+    height: 35px;
+    content: "";
+    position: absolute;
+    transition: background 0.3s;
+  }
+  &::after {
+    transform: rotate(90deg);
+    left: 48%;
+    top: 1%;
+    background: #1b1a22;
+    display: block;
+    width: 1px;
+    height: 35px;
+    content: "";
+    position: absolute;
+    transition: background 0.3s;
+  }
+}
+
+.notActive {
+  &::before {
+    right: 50%;
+    top: 0;
+    background: #fff;
+    display: block;
+    width: 1px;
+    height: 35px;
+    content: "";
+    position: absolute;
+    transition: background 0.3s;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+    left: 48%;
+    top: 1%;
+    background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+    display: block;
+    width: 1px;
+    height: 35px;
+    content: "";
+    position: absolute;
+    transition: background 0.3s;
+  }
+}

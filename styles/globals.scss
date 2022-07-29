@@ -1,0 +1,36 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.MuiAccordion-root {
+  padding: 40px !important;
+  border-radius: 30px !important;
+  box-shadow: none !important;
+
+  .wrappHeaderAcc:hover .titleAcc {
+    background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%) !important;
+    -webkit-text-fill-color: transparent !important;
+    text-fill-color: transparent !important;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 20px !important;
+  }
+}
+
+.MuiAccordion-root::before {
+  content: none !important;
+}

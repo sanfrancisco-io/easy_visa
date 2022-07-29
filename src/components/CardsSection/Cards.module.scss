@@ -1,0 +1,126 @@
+.wrapper {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .cardBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+      margin: 0 20px 20px;
+    }
+    @media screen and (max-width: 520px) {
+      display: block;
+
+      div:last-child {
+        margin-top: 20px;
+      }
+    }
+    div {
+      padding: 70px;
+      color: #fff;
+      border-radius: 30px;
+      @media (max-width: 1300px) {
+        padding: 30px;
+      }
+      @media (max-width: 992px) {
+        padding: 20px;
+      }
+      h3 {
+        font: 400 36px/133% "TT Hoves";
+        margin-bottom: 20px;
+        letter-spacing: -0.04em;
+        font-family: "TT Hoves", sans-serif;
+
+        @media (max-width: 1300px) {
+          font-size: 30px;
+        }
+        @media (max-width: 992px) {
+          font-size: 22px;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: -0.04em;
+        opacity: 0.9;
+      }
+    }
+  }
+  .secondCardsBlock {
+    margin-top: 20px;
+    border-radius: 30px;
+    background: #f6f6f6;
+    padding: 20px;
+
+    @media screen and (max-width: 992px) {
+      margin: 20px;
+      padding: 20px 0;
+    }
+    .cardBlock {
+      color: #000 !important;
+    }
+
+    .background {
+      background-image: url("../../assets/svg/Background-2.svg");
+      background-repeat: no-repeat;
+      background-size: 106%;
+    }
+    p {
+      margin-bottom: 20px;
+      font-weight: 300;
+      font-size: 15px !important;
+      span {
+        margin-right: 5px !important;
+      }
+    }
+    .secondCardsBlock_2 {
+      h3 {
+        background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+        font-family: "TT Hoves", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 133%;
+        letter-spacing: -0.04em;
+        margin-bottom: 20px;
+        -webkit-box-decoration-break: clone;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+      }
+      p {
+        color: black;
+      }
+      a {
+        margin-top: 20px;
+        background: linear-gradient(
+          97.05deg,
+          #ff4a38 -13.27%,
+          #fe5196 104.49%,
+          #ff1a75 104.49%
+        );
+        padding: 14px 25px;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 18px;
+        border-radius: 50px;
+        line-height: 21px;
+        color: #fff;
+        cursor: pointer;
+        transition: box-shadow 0.3s;
+        text-decoration: none;
+        box-shadow: 0 0 0 0 #ff4a38;
+        outline: none;
+
+        &:hover {
+          box-shadow: 0 0 10px 8px #ff4a38;
+        }
+      }
+    }
+  }
+}

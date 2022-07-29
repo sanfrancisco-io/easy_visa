@@ -1,0 +1,162 @@
+.wrapper {
+  margin-top: 20px;
+  border-radius: 30px;
+  background: #f6f6f6;
+  padding: 20px;
+  display: grid;
+  row-gap: 20px;
+
+  @media screen and (max-width: 992px) {
+    margin: 0 20px;
+    row-gap: 10px;
+  }
+
+  @media screen and (max-width: 754px) {
+    display: block;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .nameOfCountry {
+    background: #1b1a22;
+    -webkit-box-decoration-break: clone;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .detailHeader {
+    padding: 20px 35px;
+    background: #f6f6f6;
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr 1fr;
+    border-radius: 15px;
+    column-gap: 20px;
+
+    @media screen and (max-width: 674px) {
+      min-width: 426px;
+    }
+
+    p {
+      font: 500 16px/162% "TT Hoves";
+      letter-spacing: -0.04em;
+      color: #1b1a22;
+    }
+  }
+
+  .detailBody {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 35px;
+    padding-bottom: 0;
+
+    .detail {
+      display: grid;
+      grid-template-columns: 2fr 3fr 3fr 1fr;
+      column-gap: 20px;
+      padding: 20px 0;
+
+      .bank {
+        img,
+        span {
+          width: 130px !important;
+          height: auto !important;
+          overflow: hidden !important;
+          display: block;
+        }
+
+        a {
+          font-size: 14px;
+          line-height: 14px;
+          text-decoration: none;
+          border-bottom: 1px solid;
+          opacity: color 0.3s, border 0.3s;
+          color: #1b1a22;
+          padding-bottom: 2px;
+          width: min-content;
+          height: min-content;
+          display: block;
+        }
+      }
+
+      .price {
+        h4 {
+          font-weight: 500;
+          font: inherit;
+        }
+
+        p {
+          margin-bottom: 20px;
+          font-weight: 300;
+          font-size: 15px !important;
+        }
+      }
+
+      .docks {
+        p {
+          margin-bottom: 20px;
+          font-weight: 300;
+          font-size: 15px !important;
+          font-family: "TT Hoves", sans-serif;
+          span {
+            margin-right: 5px !important;
+          }
+        }
+      }
+
+      .deadLine {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 15px !important;
+      }
+    }
+  }
+
+  .accordion {
+    @media screen and (max-width: 754px) {
+      margin-bottom: 20px;
+      overflow: auto;
+    }
+  }
+}
+
+.wrappHeaderAcc:hover :global(.titleAcc) {
+  background: linear-gradient(
+    113.78deg,
+    #00dfbd -1.69%,
+    #0090ff 112.64%
+  ) !important;
+  -webkit-box-decoration-break: clone;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-fill-color: transparent !important;
+}
+
+.wrappHeaderAcc:hover :global(.plus) {
+  &::after,
+  &::before {
+    background: linear-gradient(
+      113.78deg,
+      #00dfbd -1.69%,
+      #0090ff 112.64%
+    ) !important;
+  }
+}
+.wrappHeaderAcc:hover :global(.activePlus) {
+  &::after {
+    background: linear-gradient(
+      113.78deg,
+      #00dfbd -1.69%,
+      #0090ff 112.64%
+    ) !important;
+  }
+}
